@@ -7,8 +7,6 @@
 </head>
 <script type="text/javascript" src="http://ajax.microsoft.com/ajax/jquery/jquery-1.4.min.js"></script>
 <style type="text/css">
-body{background-color: black;color: white;width:99%;word-wrap:break-word;line-height:24px;letter-spacing:1px;margin:10px auto;}
-.box{width:100%;word-wrap:break-word;line-height:24px;letter-spacing:1px;}
 </style>
 
 <body>
@@ -16,16 +14,5 @@ body{background-color: black;color: white;width:99%;word-wrap:break-word;line-he
 </body>
 
 <script type="text/javascript">
-		function gen()  {
-			var length = 7320;
-			var source = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
-			var s = "";
-			for(var i = 0;i < length; i++)  {
-				s += source.charAt(Math.ceil(Math.random()*1000)%source.length);
-			}
-			return s;
-		}
-$('body').text(gen())
-
 </script>
 </html>
