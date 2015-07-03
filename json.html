@@ -5,23 +5,14 @@
     <meta charset="UTF-8">
     <title>Untitled Document</title>
 </head>
+<script type="text/javascript" src="http://ajax.microsoft.com/ajax/jquery/jquery-1.4.min.js"></script>
 
 <body>
-<p>
-First Name: <span id="fname"></span><br /> 
-Last Name: <span id="lname"></span><br /> 
-</p> 
+
+
+
 <script type="text/javascript">
-var txt = '{"employees":[' +
-'{"firstName":"Bill","lastName":"Gates" },' +
-'{"firstName":"George","lastName":"Bush" },' +
-'{"firstName":"Thomas","lastName":"Carter" }]}';
 
-var obj = eval ("(" + txt + ")");
-
-document.getElementById("fname").innerHTML=obj.employees[1].firstName 
-document.getElementById("lname").innerHTML=obj.employees[1].lastName 
 </script>
-
 </body>
 </html>
