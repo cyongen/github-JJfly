@@ -3,9 +3,7 @@
 	var	$win	= $(window),
 		doc		= document,
 		$doc	= $(doc),
-		loc		= location,
 		WS		= window.WS || (window.WS = {}),
-		init	= {},							//启动时加载程序
 		base	= WS.base || (WS.base = {});	//接口程序
 
 	base.showpage = function(data, temp, amountType){
