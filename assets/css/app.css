@@ -1,0 +1,6 @@
+/* Write your styles */
+
+.modal_alert{position:absolute;left:40%;width:200px;color:#fff;text-align:center;}
+.modal_alert.red{background-color:red;}
+.modal_alert.blue{background-color:blue;}
+.modal_alert.hide{display:none;}
