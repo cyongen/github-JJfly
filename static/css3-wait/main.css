@@ -129,59 +129,11 @@ table {
 body {
   font-size: 62.5%;
   font-family: "Microsoft YaHei","微软雅黑","Hiragino Sans GB","STHeiti","WenQuanYi Micro Hei",SimSun,sans-serif,Lucida,Verdana,Serif;
-  background: #0dcecb;
-  color: #FFF;
+  background: #f60;
+  color: #0dcecb;
 }
-main {
-  overflow: hidden;
-}
-.overlay {
-  background: rgba(0, 0, 0, 0.3);
-  width: 100%;
-  height: 100%;
-  position: fixed;
-  top: 0;
-  left: 0;
-}
-.source {
-  background: #FFF;
-  border-radius: 10px;
-  width: 600px;
-  height: 500px;
-  position: absolute;
-  margin: 0 auto;
-  top: 120px;
-  right: 0;
-  bottom: 0;
-  left: 0;
-}
-.source textarea {
-  padding: 1em;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  border: 0 none;
-  width: 100%;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
-  outline: 0 none;
-  font-family: arial, sans-serif;
-  font-size: 1.2em;
-}
-.source .markup {
-  height: 15%;
-  border-bottom: 1px solid #ddd;
-}
-.source .css {
-  height: 84%;
-  border-radius: 10px;
-}
-.hidden {
-  display: none;
-}
-h1 {
-  font-size: 28px;
-  padding: 1em 0 1em 0;
-}
+
+
 .inner {
   width: 960px;
   margin: 0 auto;
@@ -217,45 +169,4 @@ h1 {
   -ms-transform: translateZ(0);
   -o-transform: translateZ(0);
   transform: translateZ(0);
-}
-.github img {
-  position: absolute;
-  top: 0;
-  right: 0;
-  border: 0;
-}
-a.twitter:link,
-a.twitter:visited {
-  font-size: 1.3em;
-  line-height: 4em;
-  float: left;
-  margin: 30px 0 0 0;
-  text-decoration: none;
-  color: #FFF;
-}
-a.twitter:link:hover,
-a.twitter:visited:hover {
-  text-decoration: underline;
-}
-a.twitter img {
-  border-radius: 50%;
-  float: left;
-  border: 1px solid #bbb;
-  padding: 0.1em;
-  background: #FFF;
-}
-a.twitter span {
-  padding: 0 0 0 0.6em;
-}
-.link {
-  text-decoration: none;
-  color: #FFF;
-}
-.link:hover {
-  text-decoration: underline;
-}
-@media (max-width: 960px) {
-  .inner {
-    width: 100%;
-  }
 }

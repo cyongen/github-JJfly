@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<meta charset="UTF-8">
+	<title>CSS发抖</title>
+	<!--base-->
+	<meta name="description" content="在一个大型项目里我需要制作出抖动的效果。最初我使用的是普通的CSS。
+当开发完成后，我发现了这个很酷的jQuery plugin(由@jackrugile开发)。
+于是我就开始思考，我应该做出这个小的CSS project。">
+	<link rel="stylesheet" type="text/css" href="../static/shake/csshake.css">
+	<link rel="stylesheet" type="text/css" href="../static/shake/style.css">
+	<link rel="stylesheet" type="text/css" href="../static/shake/onepage-scroll.css">
+	<link rel="stylesheet" type="text/css" href="../static/shake/prism.css">
+	
+</head>
+<body class="viewing-page-6"><ul class="onepage-pagination"><li><a data-index="1" href="#1"></a></li><li><a data-index="2" href="#2"></a></li><li><a data-index="3" href="#3"></a></li><li><a data-index="4" href="#4"></a></li><li><a data-index="5" href="#5"></a></li><li><a class="active" data-index="6" href="#6"></a></li></ul>
+	<div style="position: relative; transform: translate3d(0px, -500%, 0px); transition: all 1000ms ease 0s;" class="main onepage-wrapper">
+		<section data-index="1" style="position: absolute; top: 0%;" class="section home shamrock">
+			<div class="glass shake shake-hard freez">
+			  <i class="bubble"></i>
+			  <i class="bubble big"></i>
+			  <i class="bubble"></i>
+			  <i class="bubble big"></i>
+			  <i class="bubble small"></i>
+			  <i class="bubble"></i>
+			  <i class="bubble"></i>
+			  <i class="bubble small"></i>
+			  <i class="bubble"></i>
+			  <i class="bubble small"></i>
+			  <span class="straw"></span>
+			</div>
+			<h1>CSS<span class="shake shake-delay">发抖</span></h1>
+			<h4>一些让你的<span class="shake">页面发抖</span>的CSS类</h4>
+			<a class="arrow shake shake-constant"></a>
+		</section>
+		<section data-index="2" style="position: absolute; top: 100%;" class="section carrot">
+			<h1>抖动方式</h1>
+			<h4>常见方式汇总</h4>
+			<ul class="previews">
+				<li>
+					<i class="preview-item shake">
+						Bs
+						<span class="flip"></span>
+					</i>
+					<p class="preview-desc">基本抖动</p>
+				</li>
+				<li>
+					<i class="preview-item shake shake-slow">
+						Ss
+						<span class="flip"></span>
+					</i>
+					<p class="preview-desc">慢速抖动</p>
+				</li>
+				<li>
+					<i class="preview-item shake shake-little">
+						Ls
+						<span class="flip"></span>
+					</i>
+					<p class="preview-desc">轻微抖动</p>
+				</li>
+				<li>
+					<i class="preview-item shake shake-hard">
+						Hs
+						<span class="flip"></span>
+					</i>
+					<p class="preview-desc">剧烈抖动</p>
+				</li>
+				<li>
+					<i class="preview-item shake shake-horizontal">
+						⇄
+						<span class="flip"></span>
+					</i>
+					<p class="preview-desc">横向抖动</p>
+				</li>
+				<li>
+					<i class="preview-item shake shake-vertical">
+						⇵
+						<span class="flip"></span>
+					</i>
+					<p class="preview-desc">上下抖动</p>
+				</li>
+				<li>
+					<i class="preview-item shake shake-rotate">
+						↻
+						<span class="flip"></span>
+					</i>
+					<p class="preview-desc">扭动</p>
+				</li>
+				<li>
+					<i class="preview-item shake shake-opacity">
+						Os
+						<span class="flip"></span>
+					</i>
+					<p class="preview-desc">隐现抖动</p>
+				</li>
+				<li>
+					<i class="preview-item shake shake-crazy">
+						✌
+						<span class="flip"></span>
+					</i>
+					<p class="preview-desc">疯狂抖动</p>
+				</li>
+				<li>
+					<i class="preview-item shake shake-constant">
+						ℇ
+						<span class="flip"></span>
+					</i>
+					<p class="preview-desc">抖动不停</p>
+				</li>
+			</ul>
+			<a class="arrow shake shake-constant"></a>
+		</section>
+		<section data-index="3" style="position: absolute; top: 200%;" class="section pear">
+			<h1>抖动控制</h1>
+			<h4>你可以控制抖动的过程...</h4>
+			<ul class="previews bigs">
+				<li>
+					<i class="preview-item big shake shake-hard freez" id="pr1">
+						❄
+						<span class="flip"></span>
+					</i>
+					<p class="preview-desc">抖动后停止</p>
+				</li>
+				<li>
+					<i class="preview-item big shake shake-hard shake-constant hover-stop" id="pr2">
+						⾉
+						<span class="flip"></span>
+					</i>
+					<p class="preview-desc">一直抖动，鼠标悬停时静止</p>
+				</li>
+			</ul>
+			<div class="dropdown">
+				<select class="dropdown-select" id="shake-type">
+				    <option value="" disabled="disabled" selected="selected">选择抖动方式</option>
+				    <option value="shake-hard">剧烈抖动</option>
+				    <option value="shake-slow">慢速抖动</option>
+				    <option value="shake-little">轻微抖动</option>
+				    <option value="shake-horizontal">横向抖动</option>
+				    <option value="shake-vertical">上下抖动</option>
+				    <option value="shake-rotate">扭动</option>
+				    <option value="shake-opacity">隐现抖动</option>
+				    <option value="shake-crazy">疯狂抖动</option>
+				</select>
+			</div>
+			<a class="arrow shake shake-constant"></a>
+		</section>
+		<section data-index="4" style="position: absolute; top: 300%;" class="section code amethyst">
+			<h1>用法</h1>
+			<h4>非常简单，用鼠标悬停在上面看看效果...</h4>
+			<div class="">
+				<link type="text/css" href="http://www.webhek.com/misc-res/css-shake/css/csshake.css">
+				<pre class=" shake shake-little shake-constant language-markup"><code class=" language-markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>link</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>text/css<span class="token punctuation">"</span></span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>csshake.css<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span></code></pre><br>
+				<pre class=" shake language-markup"><code class=" language-markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>shake<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span></code></pre>
+				<pre class=" shake shake-hard language-markup"><code class=" language-markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>shake shake-hard<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span></code></pre>
+				<pre class=" shake shake-slow language-markup"><code class=" language-markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>shake shake-slow<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span></code></pre>
+				<pre class=" shake shake-little language-markup"><code class=" language-markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>shake shake-little<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span></code></pre>
+				<pre class=" shake shake-horizontal language-markup"><code class=" language-markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>shake shake-horizontal<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span></code></pre>
+				<pre class=" shake shake-vertical language-markup"><code class=" language-markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>shake shake-vertical<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span></code></pre>
+				<pre class=" shake shake-rotate language-markup"><code class=" language-markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>shake shake-rotate<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span></code></pre>
+				<pre class=" shake shake-opacity language-markup"><code class=" language-markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>shake shake-opacity<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span></code></pre>
+				<pre class=" shake shake-crazy language-markup"><code class=" language-markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>shake shake-crazy<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span></code></pre>
+			</div>
+			<a class="arrow shake shake-constant"></a>
+		</section>
+		<section data-index="5" style="position: absolute; top: 400%;" class="section scooter">
+			<h1>更丰富的控制方式</h1>
+			<h4>The Sass @mixins, and so on...</h4>
+			<pre class=" language-css">	<code class=" language-css"><span class="token atrule">@include shake($x, $y, $rot, $name, $steps, $opacity)<span class="token punctuation">;</span></span> <span class="token comment" spellcheck="true">/* _mixins.scss */</span> 
+	<span class="token comment" spellcheck="true">/* 	$x &amp; $y: pixels to move on the X and Y axis,
+		$rot: deg to rotate
+		$name: the name assigned to those parameters
+		$steps: adjust the animation loop (i.e 10 makes an animation in steps of 10%)
+		$opacity: true/false to add opacity animation */</span>
+	<span class="token atrule">@include shake(40px, 40px, 20deg, 'shake-crazy', 10, true)<span class="token punctuation">;</span></span> <span class="token comment" spellcheck="true">/* an example */</span>
+
+	<span class="token atrule">@include animation($name, $dur, $iter, $tim, $del)<span class="token punctuation">;</span></span> <span class="token comment" spellcheck="true">/* _shake.scss */</span>
+	<span class="token comment" spellcheck="true">/*  $name: animation-name,
+		$dur: animation-duration,
+		$iter: animation-iteration-count,
+		$tim: animation-timing-function,
+		$del: animation-delay */</span>
+	<span class="token atrule">@include animation(shake-slow, 5s)<span class="token punctuation">;</span></span> <span class="token comment" spellcheck="true">/* an example */</span>
+</code></pre>
+			<p>注意：你需要使用<code>random()</code>函数来编译Sass文件。<br><a href="https://github.com/nex3/sass/pull/968" class="shake freez">这里</a>有如何实现的方法，或者参考<a href="http://blog.codepen.io/2013/09/17/adding-random-function-sass/" class="shake shake-hard freez">这里</a>或<a href="http://hugogiraudel.com/2013/10/17/sass-random/" class="shake shake-rotate freez">这里</a>。<br>
+				还需要注意的是，这些CSS代码里是没有使用<a href="http://www.webhek.com/vendor-prefixes/">浏览器引擎前缀</a>的。希望有一天我们不再需要使用<a href="http://www.webhek.com/vendor-prefixes/">浏览器引擎前缀</a>。</p>
+			<a class="btn amethyst shake shake-constant hover-stop" href="http://www.webhek.com/misc-res/css-shake/css/csshake.min.css">下载</a>
+			<small>csshake.min.css</small>
+			<a class="arrow shake shake-constant"></a>
+		</section>
+		<section data-index="6" style="position: absolute; top: 500%;" class="section dolly dark-txt active">
+			<h1>最后几句话</h1>
+			<h4>The about, the idea, and the desire to hear from you to improve the code...</h4>
+			<p>在一个大型项目里我需要制作出抖动的效果。最初我使用的是普通的CSS。<br>当开发完成后，我发现了<a class="shake shake-constant shake-little" href="http://jackrugile.com/jrumble/">这个</a>很酷的jQuery plugin(由<a class="shake" href="https://twitter.com/jackrugile">@jackrugile</a>开发)。<br>于是我就开始思考，我应该做出<span class="shake shake-little shake-constant">这个小的CSS project</span>.</p>
+			<a class="btn carrot shake shake-constant hover-stop" href="http://www.webhek.com/misc-res/css-shake/css/csshake.min.css">下载</a>
+			<small>csshake.min.css</small>
+			<a class="btn light shake" href="http://github.com/elrumordelaluz">Fork me on Github</a>
+			<center><div style="width:100%; display: inline-block; clean: both; margin-top:20px;"><!--share-bar.html--></div></center>
+			<footer>Made with ♥ by <a class="shake shake-constant hover-stop" href="http://twitter.com/elrumordelaluz">@elrumordelaluz</a>, using <a href="http://sass-lang.com/">Sass</a>，translated by <a href="http://www.webhek.com/">webhek</a>.<br>这个网页里我使用了<a href="http://leaverou.github.io/prefixfree/">prefixfree</a>和<a href="http://prismjs.com/">Prism.js</a>，它们是由<a href="http://twitter.com/LeaVerou">Lea Verou</a>开发，<a href="https://github.com/peachananr/onepage-scroll">One page scroll</a> plugin是由<a href="https://twitter.com/peachananr">@peachananr</a>开发 </footer>
+		</section>
+	</div>
+
+
+	<!-- prefixfree yeah! from here: http://leaverou.github.io/prefixfree/ -->
+	<!-- <script type="text/javascript" src="js/prefixfree.min.js"></script> -->
+	<!--No more essential for the Demo since added some -prefixes in the main @mixins -->
+	
+	<script src="shake/jquery.js"></script>
+	<script type="text/javascript" src="shake/jquery_002.js"></script>
+	<script type="text/javascript" src="shake/prism.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$(".main").onepage_scroll({
+			   sectionContainer: "section",
+			   easing: "ease",
+			   animationTime: 1000,
+			   pagination: true,
+			   updateURL: false,  
+			   beforeMove: function(index) {},
+			   afterMove: function(index) {},
+			   loop: false,
+			   keyboard: true,        
+			   responsiveFallback: false
+			});
+			$('.arrow').click(function(){
+				$(".main").moveDown();
+			})
+			$('#shake-type').change(function(){
+				var newShake = $(this).val();
+				var regex = /(\s)*(shake-.*?)(?=\s)/g; 
+				$('#pr1, #pr2').removeClass('shake-hard shake-slow shake-little shake-horizontal shake-vertical shake-rotate shake-opacity shake-crazy').addClass(newShake);
+			})
+
+		}) // Ready
+
+		
+	</script>
+<!--util.js-->
+<!--ga.js-->
+
+
+</body></html>

@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>below</title>
+</head>
+<!-- <script type="text/javascript" src="http://ajax.microsoft.com/ajax/jquery/jquery-1.4.min.js"></script> -->
+<style type="text/css">
+body {
+    background-color: #F0FFF0;
+}
+
+.pic1 {
+    -webkit-box-reflect: below 3px -webkit-gradient(linear, left top, left bottom, from(transparent), to(rgba(250, 250, 250, 0.3)));
+}
+
+.pic2 {
+    -webkit-box-reflect: below 3px -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(70%, transparent), to(rgba(250, 250, 250, 0.3)));
+}
+
+.pic1 {
+    position: relative;
+    /* 给倒影留下空间 */
+    margin-bottom: 200px;
+}
+
+.pic1:before {
+    content: "";
+    /* needed or nothing will be shown */
+    background: -moz-linear-gradient(top, white, white 30%, rgba(240,255,240, 0.9) 65%, rgba(240,255,240, 0.7)) 0px 0px, -moz-element(#someid) 0px -127px no-repeat;
+    -moz-transform: scaleY(-1);
+    /* flip the image vertically */
+    position: relative;
+    height: 220px;
+    width: 200px;
+    /* 需要 > image width + margin + shadow */
+    top: 247px;
+    left: 0px;
+}
+</style>
+
+<body>
+    <!-- 谷歌浏览器 -->
+    <img class="pic1" src="../static/images/city.jpg" />
+    <img class="pic2" src="../static/images/city.jpg" />
+</body>
+
+</html>

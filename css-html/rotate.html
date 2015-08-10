@@ -1,0 +1,78 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>rotate</title>
+</head>
+<!-- <script type="text/javascript" src="http://ajax.microsoft.com/ajax/jquery/jquery-1.4.min.js"></script> -->
+<style type="text/css">
+body {
+    background-color: #F0FFF0;
+}
+
+
+/* 用来实现动画的keyframes;  从0度旋转到360度 */
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+
+/* 实现光线辐射效果 */
+
+#raysDemoHolder {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    margin: 100px 0 0 200px;
+}
+
+#raysLogo {
+    width: 200px;
+    height: 200px;
+    text-indent: -3000px;
+    background: url(../static/images/city.jpg) 0 0 no-repeat;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+
+#rays {
+    /* 表现动画效果 */
+    background: url(../static/images/rays-main.png) 0 0 no-repeat;
+    position: absolute;
+    top: -130px;
+    left: -130px;
+    width: 490px;
+    height: 490px;
+    /* microsoft ie */
+    animation-name: spin;
+    animation-duration: 40000ms;
+    /* 40 seconds */
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+#rays:hover {
+    /* animation-duration: 10000ms;*/
+    /* 10 seconds - speed it up on hover! */
+    /* resets the position though!  sucks */
+}
+</style>
+
+<body>
+    <div id="raysDemoHolder">
+        <a href="javascript:;" id="raysLogo">WebHek</a>
+        <div id="rays"></div>
+    </div>
+</body>
+
+</html>

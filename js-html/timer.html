@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>timer</title>
+</head>
+<script type="text/javascript" src="../static/js/jquery.min.js"></script>
+<script type="text/javascript">
+    $(document).ready(function() {
+        var intDiff = parseInt(10); //倒计时总秒数量
+        function timer(intDiff) {
+            setInterval(function() {
+                var second = 0; //时间默认值
+                var secsh = $('.t');
+                if (intDiff == 0) {
+                    clearInterval(timer);
+                    secsh.text('0秒后自动返回');
+                    //loc.href = secsh.attr('data-url');//倒计时结束跳转
+                    return false;
+                } else {
+                    second = Math.floor(intDiff);
+                    secsh.text(second);
+                    intDiff--;
+                }
+            }, 1000);
+        }
+        if ($('.t').length == true) {
+            timer(intDiff);
+        }
+    });
+</script>
+
+<body>
+
+    <p class="t"></p>
+
+</body>
+
+</html>
